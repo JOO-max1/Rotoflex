@@ -1,0 +1,76 @@
+/* Load LAST, after home.css (and products.css on the products page).
+   Large desktop layout is untouched; everything below 1200px is re-flowed. */
+
+img { max-width: 100%; height: auto; }
+
+/* the product boxes grow with their content instead of cutting it off */
+.our { height: auto; min-height: 284px; }
+
+/* ---------- tablets and small laptops ---------- */
+@media (max-width: 1200px) {
+  .h1, .About, .our { height: auto; min-height: 0; margin-top: 50px; padding-bottom: 20px; }
+  .h1, .About { display: flex; flex-direction: column; }
+
+  h1 { width: auto; font-size: 1.8rem; }
+  #HOME p, .About p { width: auto; max-width: 600px; }
+
+  .h1 > a { align-self: flex-start; margin: 10px; }
+  button { position: static; left: auto; transform: none; margin: 0; }
+
+  .slideshow {
+    position: relative; top: 0; align-self: center;
+    width: 100%; max-width: 414px; height: 276px; margin: 10px auto;
+  }
+
+  .About ul { position: static; transform: none; margin: 0; padding: 0 10px; }
+  .About li { padding: 10px; }
+  small { display: inline-block; padding-left: 48px; }
+
+  .our { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px 10px; }
+  .our > div { flex: 1 1 220px; max-width: 340px; min-width: 0; text-align: center; }
+  .our img { display: block; width: 100%; max-width: 300px; margin: 0 auto; }
+  .our h3 { padding: 10px 0 0; }
+
+  .footer { height: auto; padding-bottom: 30px; }
+  .footer ul { padding-left: 20px; margin: 0; }
+  .Us { position: static; top: auto; margin: 20px; padding-left: 0; }
+}
+
+/* ---------- phones and small tablets ---------- */
+@media (max-width: 760px) {
+  nav { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 6px; }
+  nav img { width: 70px; height: auto; padding: 0; }
+  .ROTOFLEX { flex: 1 1 auto; min-width: 0; }
+  .ROTOFLEX h2 { position: static; margin: 0; font-size: 1.4rem; }
+
+  .nav { flex: 1 1 100%; }
+  .nav ul {
+    position: static; right: auto; top: auto;
+    flex-wrap: wrap; justify-content: center; gap: 6px 14px;
+    margin: 0; padding: 0 6px 8px;
+  }
+
+  .h1, .About, .our { margin-top: 40px; }
+  h1 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  .slideshow { height: 240px; }
+}
+
+/* ---------- small phones ---------- */
+@media (max-width: 520px) {
+  h1 { font-size: 1.3rem; }
+  strong { font-size: 1.1rem; }
+  small { display: block; padding-left: 0; }
+  .About li { padding: 8px 4px; }
+  .slideshow { height: 200px; }
+  .our > div { flex-basis: 100%; }
+  .p-grid { padding: 20px 15px 0; gap: 20px; }
+  .p-intro, .p-section { margin-top: 40px; }
+  .footer ul { padding-left: 10px; }
+  .footer li { padding-top: 14px; }
+}
+
+/* ---------- desktop: keep the slideshow inside the hero box ---------- */
+@media (min-width: 1201px) {
+  .slideshow { top: -229px; }
+}
