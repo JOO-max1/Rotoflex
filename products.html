@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 
 <head>
-    <title> ROTOFLEX - Products </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Our product web site" />
+    <title>المنتجات | روتوفليكس لحلول التعبئة والتغليف</title>
+    <meta name="description" content="نماذج من أعمال روتوفليكس: أكياس تغليف مطبوعة، أكياس جاهزة، ورولات تعبئة مطبوعة لماكينات التعبئة الأوتوماتيك." />
+    <meta name="theme-color" content="#1d2f68" />
+    <link rel="icon" href="img/logo.jpeg" />
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="products.css" />
     <link rel="stylesheet" href="responsive.css" />
@@ -13,151 +15,128 @@
 
 <body>
 
-    <header>
-        <br>
-        <nav>
-            <img src="img/logo.jpeg" alt=" Our logo" width="100">
-            <span class="ROTOFLEX">
-                <h2>ROTOFLEX</h2>
-            </span>
-            <div class="nav">
-                <ul>
-                    <li><a href="index.html#HOME"> HOME</a></li>
-                    <li><a href="index.html#About"> About Us</a></li>
-                    <li><a href="products.html"> Products</a></li>
-                    <li><a href="#contact-us"> Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html#HOME" aria-label="روتوفليكس - الرئيسية">
+                <img src="img/logo.jpeg" alt="شعار روتوفليكس لحلول التعبئة والتغليف" />
+            </a>
+            <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+            <nav id="nav-links" class="nav-links" aria-label="التنقل الرئيسي">
+                <a href="index.html#HOME">الرئيسية</a>
+                <a href="index.html#About">من نحن</a>
+                <a href="products.html" aria-current="page">المنتجات</a>
+                <a href="index.html#Services">خدماتنا</a>
+                <a href="#contact-us">تواصل معنا</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section id="Products">
-            <div class="p-intro">
-                <h3>Our Products</h3>
-                <p>Flexible packaging printed with the latest technology, made to protect your product from the first
-                    day to the last.</p>
+        <section id="Products" class="page-hero">
+            <div class="container">
+                <span class="eyebrow" style="color:#5fe0d9">منتجاتنا</span>
+                <h1>نماذج من أعمالنا</h1>
+                <p>تغليف مرن مطبوع بأحدث التقنيات، مصمم عشان يحمي منتجك من أول يوم لآخر يوم.</p>
+                <nav class="chips" aria-label="أقسام المنتجات">
+                    <a href="#ready">أكياس القهوة</a>
+                    <a href="#dates">أكياس التمر</a>
+                    <a href="#rolls">رولات التغليف</a>
+                </nav>
             </div>
         </section>
 
-        <section class="p-section">
-            <h3>Coffee Packaging</h3>
-            <p>Bags that keep your coffee fresh and protected.</p>
-            <div class="p-grid">
-                    <div class="p-card">
-                        <img src="img/Image 2026-08-17 at 5.00.10 PM.jpeg" alt="Coffee packaging">
-                        <h4>Coffee packaging</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/WhatsApp Image 2026-08-17 at 5.00.10 PM (1).jpeg" alt="Coffee packaging">
-                        <h4>Coffee packaging</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/WhatsApp Image 2026-08-17 at 5.00.10 PM (1)3.jpeg" alt="Coffee packaging">
-                        <h4>Coffee packaging</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/بالي ساده.jpeg" alt="Coffee packaging">
-                        <h4>Coffee packaging</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/حبشي محوج و سادة.jpeg" alt="Coffee packaging">
-                        <h4>Coffee packaging</h4>
-                    </div>
-            </div>
-        </section>
-
-        <section class="p-section">
-            <h3>Date Packaging</h3>
-            <p>Pouches that keep your dates fresh and protected.</p>
-            <div class="p-grid">
-                    <div class="p-card">
-                        <img src="img/الشروق جوز الهند.jpeg" alt="Date packaging">
-                        <h4>Date packaging</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/Elashrok pink.jpeg" alt="Date packaging">
-                        <h4>Date packaging</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/Elashrok purpel.jpeg" alt="Date packaging">
-                        <h4>Date packaging</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/الشروق مانجو.jpeg" alt="Date packaging">
-                        <h4>Date packaging</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/الشروق جوز هند و حليب.jpeg" alt="Date packaging">
-                        <h4>Date packaging</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/الشروق لوز.jpeg" alt="Date packaging">
-                        <h4>Date packaging</h4>
-                    </div>
-            </div>
-        </section>
-
-        <section class="p-section">
-            <h3>Packaging Rolls</h3>
-            <p>Printed packaging rolls lined with three layers.</p>
-            <div class="p-grid">
-                    <div class="p-card">
-                        <img src="img/Taiger all fleavors.jpeg" alt="Packaging roll">
-                        <h4>Packaging roll</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/Taiger cheese.jpeg" alt="Packaging roll">
-                        <h4>Packaging roll</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/taiger kabab.jpeg" alt="Packaging roll">
-                        <h4>Packaging roll</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/taiger limon.jpeg" alt="Packaging roll">
-                        <h4>Packaging roll</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/taiger sweet cill.jpeg" alt="Packaging roll">
-                        <h4>Packaging roll</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/taiger tomato.jpeg" alt="Packaging roll">
-                        <h4>Packaging roll</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/tiger mixz cheese.jpeg" alt="Packaging roll">
-                        <h4>Packaging roll</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/بن سليمان.jpeg" alt="Packaging roll">
-                        <h4>Packaging roll</h4>
-                    </div>
-                    <div class="p-card">
-                        <img src="img/بن سليمان 2.jpeg" alt="Packaging roll">
-                        <h4>Packaging roll</h4>
-                    </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="footer" id="contact-us">
-                <ul>
-                    <li><a href="index.html#HOME"> HOME</a></li>
-                    <li><a href="index.html#About"> About</a></li>
-                    <li><a href="products.html"> Products</a></li>
-                    <li><a href="#contact-us"> Contact Us</a></li>
-                </ul>
-                <div class="Us">
-                    <h3>Contact Us</h3>
-                    <p>📞: 01095357975</p>
-                    <p>✉️: omarelattar2@gmail.com</p>
-                    <p>✉️: inforotoflexfor</p>
+        <section id="ready" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>أكياس تغليف القهوة</h2>
+                    <p>أكياس تحافظ على القهوة طازجة ومحمية.</p>
+                </div>
+                <div class="p-grid">
+                    <figure class="p-card"><div class="p-media"><img src="img/Image 2026-08-17 at 5.00.10 PM.jpeg" alt="كيس تغليف قهوة مطبوع" loading="lazy" /></div><figcaption>كيس قهوة</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/WhatsApp Image 2026-08-17 at 5.00.10 PM (1).jpeg" alt="كيس تغليف قهوة مطبوع" loading="lazy" /></div><figcaption>كيس قهوة</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/WhatsApp Image 2026-08-17 at 5.00.10 PM (1)3.jpeg" alt="كيس تغليف قهوة مطبوع" loading="lazy" /></div><figcaption>كيس قهوة</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/بالي ساده.jpeg" alt="كيس تغليف قهوة مطبوع" loading="lazy" /></div><figcaption>كيس قهوة</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/حبشي محوج و سادة.jpeg" alt="كيس تغليف قهوة مطبوع" loading="lazy" /></div><figcaption>كيس قهوة</figcaption></figure>
                 </div>
             </div>
-        </footer>
+        </section>
+
+        <section id="dates" class="section section--soft">
+            <div class="container">
+                <div class="section-head">
+                    <h2>أكياس تغليف التمر</h2>
+                    <p>أكياس تحافظ على التمر طازجًا ومحميًا.</p>
+                </div>
+                <div class="p-grid">
+                    <figure class="p-card"><div class="p-media"><img src="img/الشروق جوز الهند.jpeg" alt="كيس تغليف تمر مطبوع" loading="lazy" /></div><figcaption>كيس تمر</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/Elashrok pink.jpeg" alt="كيس تغليف تمر مطبوع" loading="lazy" /></div><figcaption>كيس تمر</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/Elashrok purpel.jpeg" alt="كيس تغليف تمر مطبوع" loading="lazy" /></div><figcaption>كيس تمر</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/الشروق مانجو.jpeg" alt="كيس تغليف تمر مطبوع" loading="lazy" /></div><figcaption>كيس تمر</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/الشروق جوز هند و حليب.jpeg" alt="كيس تغليف تمر مطبوع" loading="lazy" /></div><figcaption>كيس تمر</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/الشروق لوز.jpeg" alt="كيس تغليف تمر مطبوع" loading="lazy" /></div><figcaption>كيس تمر</figcaption></figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="rolls" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>رولات التغليف</h2>
+                    <p>رولات تغليف مطبوعة ومبطّنة بثلاث طبقات، جاهزة لماكينات التعبئة.</p>
+                </div>
+                <div class="p-grid">
+                    <figure class="p-card"><div class="p-media"><img src="img/Taiger all fleavors.jpeg" alt="رول تغليف مطبوع" loading="lazy" /></div><figcaption>رول تغليف</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/Taiger cheese.jpeg" alt="رول تغليف مطبوع" loading="lazy" /></div><figcaption>رول تغليف</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/taiger kabab.jpeg" alt="رول تغليف مطبوع" loading="lazy" /></div><figcaption>رول تغليف</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/taiger limon.jpeg" alt="رول تغليف مطبوع" loading="lazy" /></div><figcaption>رول تغليف</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/taiger sweet cill.jpeg" alt="رول تغليف مطبوع" loading="lazy" /></div><figcaption>رول تغليف</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/taiger tomato.jpeg" alt="رول تغليف مطبوع" loading="lazy" /></div><figcaption>رول تغليف</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/tiger mixz cheese.jpeg" alt="رول تغليف مطبوع" loading="lazy" /></div><figcaption>رول تغليف</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/بن سليمان.jpeg" alt="رول تغليف مطبوع" loading="lazy" /></div><figcaption>رول تغليف</figcaption></figure>
+                    <figure class="p-card"><div class="p-media"><img src="img/بن سليمان 2.jpeg" alt="رول تغليف مطبوع" loading="lazy" /></div><figcaption>رول تغليف</figcaption></figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="section contact">
+            <div class="container contact-grid">
+                <div>
+                    <span class="eyebrow" style="color:#5fe0d9">تواصل معنا</span>
+                    <h2>محتاج تغليف لمنتجك؟</h2>
+                    <p>كلمنا أو ابعتلنا إيميل وهنرد عليك في أقرب وقت.</p>
+                </div>
+                <div class="contact-list">
+                    <a href="tel:01095357975">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+                        <span>01095357975</span>
+                    </a>
+                    <a href="mailto:omarelattar2@gmail.com">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                        <span>omarelattar2@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand"><img src="img/logo.jpeg" alt="روتوفليكس" /></div>
+                <nav class="footer-links" aria-label="روابط التذييل">
+                    <a href="index.html#HOME">الرئيسية</a>
+                    <a href="index.html#About">من نحن</a>
+                    <a href="products.html">المنتجات</a>
+                    <a href="#contact-us">تواصل معنا</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">© روتوفليكس لحلول التعبئة والتغليف · تصميم وتطوير: Youssef ELattar</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
